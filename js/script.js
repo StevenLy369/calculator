@@ -16,8 +16,7 @@ var divide = function(number1 , number2){
 };
   
 
-
-  $(document).ready(function(){
+$(document).ready(function(){
     $("form#add").submit(function(event){
       event.preventDefault();
    
@@ -27,7 +26,7 @@ var divide = function(number1 , number2){
   var result = add(number1, number2);
 
 
-    $("#output").text(result);
+    $("#addOutput").text(result);
     
 });
 
@@ -37,7 +36,7 @@ $("form#sub").submit(function(event){
   var number1 = parseInt($("#sub1").val());
   var number2 = parseInt($("#sub2").val());
   var subresult = subtract(number1, number2);
-  $("#output").text(subresult);
+  $("#subOutput").text(subresult);
 });
 
 $("form#multi").submit(function(event){
@@ -46,9 +45,17 @@ $("form#multi").submit(function(event){
   var number1 = parseInt($("#multi1").val());
   var number2 = parseInt($("#multi2").val());
   var subresult = multiply(number1, number2);
-  $("#output").text(subresult);
+  $("#multiOutput").text(subresult);
 });
 
+$("form#divide").submit(function(event){
+  event.preventDefault();
+
+  var number1 = parseInt($("#div1").val());
+  var number2 = parseInt($("#div2").val());
+  var divresult = divide(number1, number2);
+  $("#output").text(divresult);
+});
 
 
 
