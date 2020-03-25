@@ -3,3 +3,9 @@ body{
     text-align: center;
     background-color: slategray;
 }
+
+
+#addOutput, #subOutput, #multiOutput, #divOutput{
+    font-size: 30px;
+
+}

@@ -54,7 +54,7 @@ $("form#divide").submit(function(event){
   var number1 = parseInt($("#div1").val());
   var number2 = parseInt($("#div2").val());
   var divresult = divide(number1, number2);
-  $("#output").text(divresult);
+  $("#divOutput").text(divresult);
 });
 
 
